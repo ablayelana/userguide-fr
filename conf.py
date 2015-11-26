@@ -40,7 +40,7 @@ source_suffix = '.txt'
 master_doc = 'index'
 
 # General information about the project.
-project = u'MapMint User Guide'
+project = u'MapMint, Guide utilisateur'
 copyright = u'2014, MapMint team'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -112,7 +112,7 @@ html_theme_options = {
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = "MapMint " + release + " User Guide"
+html_title = "MapMint " + release + " Guide utilisateur"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 html_short_title = "MapMint"
@@ -189,8 +189,8 @@ htmlhelp_basename = 'ZOOProjectdoc'
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'MapMint.tex', u'MapMint User Guide',
-   u'Gérald Fenoy, Nicolas Bozon', 'manual'),
+  ('index', 'MapMint.tex', u'MapMint, Guide utilisateur',
+   u'Nicolas Bozon, Dame Dieng, Gérald Fenoy, Abdoulaye Samb', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -223,17 +223,17 @@ latex_preamble = '\setcounter{tocdepth}{2}'
 # (source start file, name, description, authors, manual section).
 man_pages = [
     ('index', 'mapmint', u'MapMint User Guide',
-     [u'Gérald Fenoy, Nicolas Bozon'], 1)
+     [u'Nicolas Bozon, Dame Dieng, Gérald Fenoy, Abdoulaye Samb'], 1)
 ]
 
 
 # -- Options for Epub output ---------------------------------------------------
 
 # Bibliographic Dublin Core info.
-epub_title = u'MapMint User Guide'
-epub_author = u'Gérald Fenoy, Nicolas Bozon'
-epub_publisher = u'Gérald Fenoy, Nicolas Bozon'
-epub_copyright = u'2011,Gérald Fenoy, Nicolas Bozon'
+epub_title = u'MapMint Guide utilisateur'
+epub_author = u'Nicolas Bozon, Dame Dieng, Gérald Fenoy, Abdoulaye Samb'
+epub_publisher = u'Nicolas Bozon, Dame Dieng, Gérald Fenoy, Abdoulaye Samb'
+epub_copyright = u'2015 Nicolas Bozon, Dame Dieng, Gérald Fenoy, Abdoulaye Samb'
 
 # The language of the text. It defaults to the language option
 # or en if the language is not set.

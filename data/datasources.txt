@@ -90,7 +90,7 @@ l'encodage de votre source données, en utilisant le champs texte prévu
 	La liste déroulante en haut à gauche de la table vous permet d'afficher 10, 15, 20, 25 ou 30 entités par page
 
 .. note:: 
-	Le clic sur un titre d'une colonne trie les valeurs par ordre croissant/décroissant ou par ordre alphabétique.
+	Le clic sur un titre d'une colone trie les valeurs par ordre croissant/décroissant ou par ordre alphabétique.
 
 
 .. _data-datasources-encoding::

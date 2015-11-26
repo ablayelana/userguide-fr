@@ -295,17 +295,17 @@ Cliquez ensuite sur l'icon de paramétrage de la table en haut à droite de la t
 ============ ================ 
 **Champ**    **Définition**          
 ------------ ---------------- 
-A            Affichage de la colonne
+A            Affichage de la colone
 R
-Pos          Position de la colonne dans la table
-Column       Titre de la colonne par défaut
-Libellé      Titre de la colonne
-Valeur       Valeur de la colonne
-Largeur      Largeur de la colonne en pixels
+Pos          Position de la colone dans la table
+Column       Titre de la colone par défaut
+Libellé      Titre de la colone
+Valeur       Valeur de la colone
+Largeur      Largeur de la coloneen pixels
 ============ ================	
 
 .. warning::
-	Dans le cas ou ve ne souhaiteriez pas afficher une colonne, veuillez supprimer toutes les informations dans la ligne de paramétrage correspondante.
+	Dans le cas ou ve ne souhaiteriez pas afficher une colone, veuillez supprimer toutes les informations dans la ligne de paramétrage correspondante.
 	
 Une fois le paramétrage de la table éffectué, cliquez sur le bouton "Valider" en bas de la fenêtre. La sauvegarde du paramétrage est stipulé par un bandeau vert en haut de l'écran.
 
