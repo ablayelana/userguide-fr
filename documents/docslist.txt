@@ -1,0 +1,63 @@
+.. _documents-doclist:
+
+Panneau des documents
+=====================
+
+Les documents crées sont publiés sur la page d'accueil de l'interface publique.
+
+.. contents:: Table des matières
+    :depth: 4
+    :backlinks: top
+    
+.. |adddc| image:: ../_static/images/add.png
+   :height: 24
+   :alt: Add document icon
+
+.. |remdc| image:: ../_static/images/delete.png
+   :height: 24
+   :alt: Delete document icon
+   
+============ ============================================
+**Icône**    **Action**       
+------------ --------------------------------------------
+|adddc|      Ajoute un nouveau document 	           
+|remdc|      Supprime un document			  	           
+============ ============================================	 
+
+Ajouter un nouveau document
+-------------------------------------
+
+Pour ajouter un nouveau document, veuillez cliquer sur l'icone
+correspodante dans la barre d'outil du panneau de gauche. Cela afficher
+le formulaire d'ajout de document comme illustré ci-dessous.
+
+.. |adddcw| image:: ../_static/images/add-document-window.png
+	:scale: 80%
+	:alt: Add new document
+
+|adddcw|
+
+Veuillez spécifier un nom dans la zone de texte prévue à cet effet
+puis cliquer sur le bouton "Ajouter". Cela entraine la disparission du
+formulaire, l'ajout du document à la table et le rechargement du
+panneau de la :doc:`infopanel`, à droite de l'écran.
+
+Supprimer un document
+---------------------------------
+
+Pour supprimer un document existant, veuillez cliquer sur le nom du
+document dans la table, puis sur l'icône de suppression dans la barre
+d'outils du panneau de gauche. Cela affiche le formulaire de
+suppression de thème illustré ci-dessous.
+
+.. |deldcw| image:: ../_static/images/delete-document-window.png
+	:scale: 80%
+	:alt: Delete document
+
+|deldcw|
+
+Cliquez ensuite sur le bouton "Supprimer". Cela entraine la
+disparission du formulaire et la suppression du document de la table.
+
+.. warning::
+	La suppression d'un document est permanente et irréversible

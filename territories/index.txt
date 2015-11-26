@@ -1,0 +1,28 @@
+.. _territories:
+
+Module de gestion des territoires
+=================================
+
+Cette section regroupe la documentation relative au module de gestion des territoires de MapMint.
+
+Le module de gestion des territoires permet de gérer un hierarchie de
+territoires qui seront par la suite utilisés dans le module de gestion
+des indicateurs permettant de joindre un territoire à une source de
+donnée tierce (base de données, requête ou autres fichiers XLS,CSV ...).
+
+La page du module est divisée en deux parties : 
+
+ * la partie de gauche appelée le :doc:`territorieslist`, il liste l'ensemble des territoires créés et permet l'ajout et la suppression de territoires
+ * la partie de droite appelée le :doc:`infopanel`, il permet de saisir les informations relatives à un document
+
+.. toctree::
+   :maxdepth: 2
+   
+   territorieslist
+   infopanel
+
+.. |mmtepr| image:: ../_static/images/territory-module-preview.png
+   :width: 100%
+   :alt: Territories module preview image
+   
+|mmtepr|

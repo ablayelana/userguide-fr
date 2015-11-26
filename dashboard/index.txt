@@ -1,0 +1,24 @@
+.. _dashboard:
+
+Tableau de bord
+===============
+
+Cette section regroupe la documentation relative au tableau de bord de
+MapMint.
+
+Le tableau de bord de MapMint est constitué de 3 sections spécifiques
+:
+
+ * **Vue d'ensemble** : qui est le contenu visible au chargement de la page,
+
+ * **Utilisateurs** qui permet la gestion des utilisateurs et des groupes d'utilisateurs,
+
+ * **Paramétrage**  qui permet la gestion de paramètres de l'application.
+
+.. toctree::
+   :maxdepth: 2
+
+   overview
+   usersmanagement
+   configuration
+   

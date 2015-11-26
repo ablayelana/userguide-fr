@@ -1,0 +1,351 @@
+.. _datadatastores:
+
+Espaces de stockage
+===================
+
+.. contents:: Table des matières
+    :depth: 4
+    :backlinks: top
+
+Un espace de stockage contient des sources de données, locales ou
+distantes. Il est défini par un nom (sans accents, espace ou
+caractères spéciaux), ainsi que par différents paramètres selon son
+type. Il existe quatre types d'espace de stockage dans MapMint:
+
+.. |adddb| image:: ../_static/images/database.png
+   :height: 24
+   :alt: PDF icon
+
+.. |adddir| image:: ../_static/images/directory.png
+   :height: 24
+   :alt: PDF icon
+
+.. |addwfs| image:: ../_static/images/ogcserver.png
+   :height: 24
+   :alt: PDF icon
+   
+============ ================== ============================================
+**Icône**    **Type** 		    **Action**       
+------------ ------------------ --------------------------------------------
+|adddb|      Base de données    Ajout d'une connexion à une base de données 	           
+|adddir|     Répertoire         Ajout d'un répertoire de données 			 
+|addwfs| 	 Serveur OGC 	 	Ajout d'un serveur OGC externe 	          
+============ ================== ============================================							
+
+.. warning::
+   Le nom d'un espace de stockage ne doit contenir ni *espace*, *accent* ou *caractères spéciaux*
+
+.. _datadatastores_add:
+
+Ajouter un espace de stockage
+*****************************
+
+Répertoires
+-------------
+
+Un espace de stockage de type répertoire permet d'établir un lien
+symbolique vers un répertoire de données du serveur FTP. Cliquez sur
+l'icône "Ajouter un répertoire" se trouvant dans la barre
+d'outils. Cela entraine l'affichage du formulaire d'ajout d'un
+répertoire.
+
+.. |adddirw| image:: ../_static/images/add-directory-window.png
+	:width: 100%
+	:alt: add directory window
+
+|adddirw|
+
+Renseignez le nom de l'espace de stockage puis sélectionnez un
+répertoire du serveur dans l'arbre des répertoires (arborescence du
+repértoire /data de l'instance MapMint). Vous avez la possibilité de
+créer un répertoire vide sur le serveur FTP, en choisissant l'option
+"nouveau", vous devez alors aussi donner un nom au répertoire à
+créer.
+
+.. warning::
+   Le répertoire ciblé ne doit pas contenir de sous-répertoires.
+   
+.. warning::
+   Le repertoire ciblé doit contenir uniquement des formats de données supportés par MapMint.
+
+Cela entraîne la fermeture de la fenêtre et l'ajout du nouvel espace de stockage dans l'abre de gauche, dans la section Répertoires.
+
+.. note::
+   Une fois l'espace de stockage crée, procéder à un clic droit sur ce dernier et cliquer sur "Rafraichir".
+   
+Le clic sur l'espace de stockage entraine l'affichage des sources de données qu'il contient dans le panneau des :doc:`datasources`.
+   
+Base de données
+-------------------------------
+
+Un espace de stockage de type base de données permet d'établir une
+connexion avec une base de données PostgreSQL ou MySQL. Cliquez sur
+l'icône "Ajouter une base de données" se trouvant dans la barre
+d'outils en haut du panneau des espaces de stockages. Cela entraine
+l'affichage du formulaire d'ajout d'une connexion à une base de données
+comme illustré ci-dessous.
+
+.. |adddbw| image:: ../_static/images/add-database-window.png
+	:width: 100%
+	:alt: add database window
+
+|adddbw|
+
+Renseignez tout les champs puis cliquez sur le bouton "Tester". 
+
+Si le test renvoi un message de succès, vous pouvez alors cliquer sur le bouton "Ajouter". Cela entraîne la fermeture de la fenêtre et l'ajout du nouvel espace de stockage dans l'abre de gauche, dans la section PostGIS ou MySQL.
+
+.. note::
+   Une fois l'espace de stockage crée, cliquez sur ce dernier dans le
+   menu de gauche pour le voir se charger dans la partie de droite
+   comme présenté sur la capture d'écran précédente.
+   
+Le clic sur l'espace de stockage entraine son affichage dans la
+partie de droite.
+
+Serveurs OGC
+---------------
+
+Un espace de stockage de type serveur OGC permet d'établir une
+connexion à un serveur WMS ou WFS externe. Cliquez sur l'icône
+"Ajouter un serveur OGC" se trouvant dans la barre d'outils, cela
+entraine l'affichage du formulaire d'ajout d'un serveur OGC.
+
+.. |addwfsw| image:: ../_static/images/add-ogcserver-window.png
+	:width: 100%
+	:alt: add database window
+
+|addwfsw|
+
+Renseignez le nom de l'espace de stockage, l'URL du serveur OGC ciblé
+ainsi que le protocole à utiliser (WMS ou WFS), puis cliquez sur le
+bouton "Tester". 
+
+Si le test renvoi un message de succès, vous pouvez alors cliquer sur le bouton "Ajouter". Cela entraîne la fermeture de la fenêtre et l'ajout du nouvel espace de stockage dans l'abre de gauche, dans la section Serveur WFS.
+
+Le clic sur l'espace de stockage entraine l'affichage des couches OGC du serveur externe.
+
+Accéder à un espace de stockage
+*******************************
+
+Lorsque vous cliquez sur l'espace de stockage cela entraine son
+affichage comme illstré ci-dessous.
+
+.. |dsp| image:: ../_static/images/data-store-preview.png
+	:width: 100%
+	:alt: add database window
+
+|dsp|
+
+Les espaces de stockage offrent des fonctions spécifiques suivant leur
+type, l'ensemble des boutons de la barre d'outils correspondante à un
+espace de stockagre est présenté ci-dessous. Pour chaque boutton, le
+type d'espace de stockage depuis lequel la fonctionnalité est
+accessible est aussi mis en évidence.
+
+.. |select| image:: ../_static/images/select.png
+   :height: 24
+
+.. |moz| image:: ../_static/images/tile.png
+   :height: 24
+
+.. |share| image:: ../_static/images/share.png
+   :height: 24
+
+.. |db| image:: ../_static/images/database.png
+   :height: 24
+
+.. |download| image:: ../_static/images/download.png
+   :height: 24
+
+.. |upload| image:: ../_static/images/upload.png
+   :height: 24
+
+.. |tile| image:: ../_static/images/tile.png
+   :height: 24
+
+.. |privileges| image:: ../_static/images/privileges.png
+   :height: 24
+
+.. |conf| image:: ../_static/images/configuration.png
+   :height: 24
+
+.. |delete| image:: ../_static/images/delete.png
+   :height: 24
+
+.. |refresh| image:: ../_static/images/refresh.png
+   :height: 24
+
+.. |toggle| image:: ../_static/images/toggle1.png
+   :height: 24
+
+.. |close| image:: ../_static/images/close.png
+   :height: 24
+
+Barre d'outils d'un espace de stockage
+--------------------------------------
+
+============ ==================== ============================================
+**Icône**    **Accessible** 		    **Action**       
+------------ -------------------- --------------------------------------------
+|select|      Tous                Selectionner toutes les sources de données contenues 	           
+|moz|         Répertoire          Créer une mosaïc d'images (requiert une source de données image sélectionnée)
+|download| 	 Répertoire 	          Télécharge les sources de données sélectionnées (requiert une source de données image sélectionnée)
+|share| 	 Tous 	 	  Ouvrir les sources de données selectionnées dans le :ref:`maps` (requiert une source de données sélectionnée) 			 
+|db| 	         Base de données  Accéder à la base de données
+|upload| 	 Répertoire 	          Envoyer une source de données dans l'espace de stockage du serveur
+|tile| 	           Répertoire     Créer un index de tuiles dans l'espace de stockage
+|privileges| 	 Tous 	          Gestion des droits d'accés d'un espace de stockage 	          
+|conf|           Tous 	          Paramétrage de l'espace de stockage	          
+|delete| 	 Tous 	          Supprimer l'espace de stockage       
+|refresh| 	 Tous 	          Rafraichir l'espace de stockage 	          
+|toggle| 	 Tous 	          Afficher / masquer l'espace de stockage 	          
+|close| 	 Tous 	          Fermer l'espace de stockage
+============ ==================== ============================================							
+
+Créer une mosaïque d'images
+---------------------------
+
+La création d'une mosaïque d'images permet
+de fusionner plusieurs sources de données images en une seule.
+
+Lorsque vous cliquez sur le boutton "Créer une mozaïc d'images" le
+formulaire présenté ci-desous s'affiche. Une fois que vous avez
+renseigné le nom de la mosaïque à créer, cliquez sur le bouton
+"Mosaïque" pour le générer. 
+
+.. warning::
+
+    Cette opération peut prendre du temps suivant les sources de
+    données images sélectionnées.
+
+.. |dsm| image:: ../_static/images/data-store-mozaic.png
+	:width: 100%
+	:alt: Créer une mozaïque une image
+
+|dsm|
+
+Envoyer une source de données dans un espace de stockage
+--------------------------------------------------------
+
+Vous pouvez utiliser le panneau d'un espace de stockage pour y envoyer
+un fichier de données géographique que vous avez sur votre machine
+locale. Ceci se fait à l'aide du formulaire présenté ci-dessous.
+
+Vous pouvez alors cliquer sur le boutton "Parcourir" afin d'ajouter
+vos fichiers à la liste des fichiers à envoyer.
+
+.. warning::
+
+    Bien que la fonctionnalité d'envoi de sources de données soit
+    disponible sur la plateforme MapMint, elle ne devrait être
+    utilisée que pour des sources de données ne dépassant pas 10Mo.
+
+.. |dsu| image:: ../_static/images/data-store-upload.png
+	:width: 100%
+	:alt: Envoyer une source de données sur le serveur
+
+|dsu|
+
+
+Créer un index de tuiles dans un espace de stockage
+---------------------------------------------------
+
+Lorsque que l'on souhaite publier des sources de données images de
+type photo aériennes par exemple, il est nécessaire d'utiliser un
+index de tuiles. Un index de tuiles est une source de données vecteurs
+(de type polygone) où chaque polygon représente la zone géographique
+couverte par une source de données images (une photos aérienne par
+exemple) et a une seule propriété qui est le chemin complet vers le
+fichier image.
+
+Pour créer un index de tuiles, vous devez placer un répertoire
+cotenant l'ensemble des photos à partir desquelles vous souhaiter
+créer un index de tuiles. Une fois ceci fait, vous pouvez cliquer sur
+le boutton "Créer un index de tuiles" de l'espace de stockage dans
+lequel vous souhaitez le stocker, le formulaire présenté ci-dessous
+apparait. Sélectionnez le SRS de l'index à créer, saisissez
+l'extension des fichiers à utiliser (tif par exemple) puis cochez le
+répertoire stockant vos photos, cliquez ensuite sur le boutton "Index
+de tuiles" pour générer l'index de tuiles.
+
+.. |dt| image:: ../_static/images/data-tileindex.png
+	:width: 100%
+	:alt: View datasource histogram
+
+|dt|
+
+
+Gestion des droits d'accés d'un espace de stockage
+--------------------------------------------------
+
+Une source de données est accessible à tout les groupes d'utilisateurs
+par défaut. Pour modifier les permissions l'accès à une couche,
+veuillez cliquer sur l'icone correspondant dans la
+:ref:`datasource-table-label`. Celà entraîne l'affichage du formulaire
+de gestion de droits d'accès, illustré ci-dessous.
+
+.. |setp| image:: ../_static/images/data-privileges.png
+	:width: 100%
+	:alt: View datasource histogram
+
+|setp|
+
+Les droits que vous pouvez affecter à un groupe d'utilisateurs sont
+listés dans la table suivante.
+
+========== ============================================
+**Valeur**  **Définition**       
+---------- --------------------------------------------
+r          Le groupe d'utilisateurs à accès à l'espace de stockage en lecture
+w          Le groupe d'utilisateurs à accès à l'espace de stockage en écriture
+x          Le groupe d'utilisateurs à le droit d'exécuter de services dans l'espace de stockage			           	  	           
+========== ============================================
+
+Ajoutez un ou plusieur groupes avec le bouton "Ajouter", cela entraine
+l'ajout de listes déroulantes dans la fenêtre. Ajustez les valeurs
+**r**, **w** et **x** puis cliquer sur le bouton "Valider". Le
+formulaire disparait et l'enregistrement des modifications est réalisé.
+
+Si vous cliquez sur le boutton "Supprimer" vous pouvez supprimer la
+dernière ligne de définition de privilèges d'accès.
+
+Pour voir le droit de lister le contenu d'un espace de stockage un
+groupe d'utilisateurs doit avoir les droits **r** et **x**. Pour
+pouvoir créer de nouvelles sources de données dans l'espace de
+stockage, un groupe doit avoir le droit **w**.
+
+Paramétrage d'un espace de stockage
+--------------------------------------------------
+
+Le formulaire de paramétrage d'un espace de stockage et équivalent au
+formulaire d'ajout spécifique au type d'espace de stockage vu
+:ref:`précédemment <datadatastores_add>`.
+
+Supprimer un espace de stockage
+--------------------------------------------------
+
+Si vous cliquez sur le boutton "Supprimer l’espace de stockage", une
+fenêtre apparait vous invitant à confirmer votre volonter de supprimer
+un espace de stockage. La suppression d'un espace de stockage peut
+entrainer des pertes de données grave et impliquer que l'application
+grand publique devienne instable du fait de l'indisponibilité de
+certaines sources de données nécessaires. Il est donc impératif de
+s'assurer qu'aucun projet ne dépend de données présentes dans l'espace
+de stockage que vous souhaitez supprimer avant de le faire. Si vous
+souhaitez vraiment supprimer un espace de stockage, cliquez alors du
+le bouton "Oui" de la fenêtre vous informant des implications
+de la suppression.
+
+Rafraichir un espace de stockage
+--------------------------------------------------
+
+Lors du premier accès à un espace de stockage, MapMint crée un fichier
+Mapfile spécifique à MapServer qui permet la diffusion des sources de
+données contenues. Une fois ce fichier créé, il n'est plus
+modifié. Cela implique que si vous avez ajouté, supprimé ou créée une
+nouvelle source de données dans un espace de stockage, vous devrez
+utiliser le boutton de rafraichissement permettant d'obtenir une liste
+exhaustive des sources de données contenue dans un espace de
+stockage. Lorsque vous cliquez sur le boutton de rafraichissement, le
+contenu de l'espace de stockage est mis à jour.

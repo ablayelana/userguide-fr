@@ -1,0 +1,165 @@
+.. _dashboard-configuration:
+
+Panneau de configuration
+========================
+
+Le panneau de configuration permet de visualiser et d'éditer les
+paramètres d'installation de MapMint. Les formulaires sont renseignés
+automatiquement par rapport au contenu du fichier de paramétrages
+``main.cfg``.
+
+.. warning::
+	Il n'est pas conseillé de modifier les paramètres de configuration sans en connaitre les conséquences
+	
+Le panneau de configuration est organisé en 4 sections, listés ci-dessous. Un clic sur l'icône entraine l'affichage de l'onglet correspondant.
+
+.. |mcon0| image:: ../_static/images/dashboard-conf-form.png
+   :width: 100%
+   :alt: Présentation du panneau de configuration
+
+|mcon0|
+
+Comme présenté dans la capture d'écran précédente, une fois que vous
+avez édité les paramètres de configuration, vous pouver utiliser le
+bouton "Sauver" en haut à droite du panneau pour enregistrer vos
+modifications.
+
+.. |mcon| image:: ../_static/images/monitor.png
+   :height: 24
+   :width: 24
+   :alt: Main configuration icon
+
+.. |icon| image:: ../_static/images/security.png
+   :height: 24
+   :width: 24
+   :alt: Indentification configuration icon
+   
+.. |pcon| image:: ../_static/images/user.png
+   :height: 24
+   :width: 24
+   :alt: Provider configuration icon
+
+.. |dcon| image:: ../_static/images/db.png
+   :height: 24
+   :width: 24
+   :alt: Provider configuration icon
+   
+============ ============================================
+**Icône**    **Action**       
+------------ --------------------------------------------
+|mcon|       Configuration générale 	           
+|icon|       Configuration de l'identification	
+|pcon|       Configuration du fournisseur		  	           
+|dcon|       Configuration de la base de données		  	           
+============ ============================================	
+
+Configuration générale
+----------------------
+
+Le formulaire de confuguration générale regroupe les variables d'environnement et les paramètres d'installation de l'instance MapMint.
+
+==================== ============================================
+**Paramètre**        **Définition**       
+-------------------- --------------------------------------------
+Encoding       		 Définit l'encodage de l'installation par défaut (utf-8)  	           
+Mmadress      		 Définit l'URL d'accès à l'instance par défaut (/mm/)
+Datapath       		 Définit le chemin vers le répertoire /data dédié aux stockage des données
+Jscache       		 Définit si les fichiers javascripts sont compressés ou non (prod|dev)
+Tmppath			     Définit le chemin vers le répertoire de stockage des fichiers temporaires (/tmp/)
+Cachedir			 Définit le chemin vers le répertoire de stockage du cache (/cache/)
+3D					 Définit l'activation du mode 3D (false|true)
+Rooturl				 Définit l'URL d'accès à l'interface publique par défaut (/public/)
+Publicationurl		 Définit l'URL de publication où sont stockés les fichiers (/public_map/)
+Dblink				 Définit le chemin vers la base de données des utilisateurs de l'instance MapMint
+Mmpath				 Définit l'URL complète du répertoire d'installation par défaut (/mm/)
+Version				 Définit le numéro de version de MapMint
+Rpy2				 Définit l'activation de la librairie R (true|false)
+Dbuser			     Définit le nom de la section correspondante aux paramétres de la base de données 
+Applicationadress	 Définit l'adresse racine de l'instance MapMint 
+Lang				 Définit les langues supportées par l'instance
+Sesspath			 Définit le chemin vers le répertoire de stockage des fichiers temporaires de session (/tmp/)
+Publicationpath      Définit le chemin vers le répertoire de publication de l'instance MapMint
+Csscache             Définit si les fichiers CSS sont compressés ou non (prod|dev)
+Msogcversion         Définit la version des services WMS et WFS de MapServer
+Serveradress         Définit l'URL permettant d'accéder à l'executable de ZOO-Project (WPS kernel)
+Dbusername           Définit le nom de l'espace de stockage correspondant à la base de données des utilisateurs
+Templatesadress      Définit l'URL permettant d'accéder au fichiers models générés par l'application (pour les fenêtres et les info bulles)
+Language			 Définit la langue de l'instance
+Mapserveradress		 Définit l'URL permettant d'accéder à l'éxécutable de MapServer
+Tmpurl               Définit l'URL d'acccès au répertoire temporaire (correspondant au chemin tmpPath)
+Templatespath		Définit le chemin complet vers le répertoire mapmint-ui/templates
+==================== ============================================
+
+Configuration de l'identification
+----------------------------------
+
+Les formulaires de configuration de l'identification et du forunisseur des services permet de caractériser l'organisation qui publie les données et la personne responsable du serveur et/ou de l'application MapMint.
+
+============================= ============================================
+**Paramètre**                 **Définition**       
+----------------------------- --------------------------------------------
+Positionname       		      Définit la position du contact de référence           
+Individualname      	      Définit le nom individuel du contact de référence	
+Providername       		      Définit le nom du fournisseur des services
+Adressadministrativearea      Définit le secteur administratif du fournisseur des services
+Adresscountry				  Définit le pays du fournisseur des services
+Phonevoice					  Définit le numéro de téléphone du contact de référence
+Adresspostalcode			  Définit le code postal du fournisseur des services
+Role						  Définit le role du fournisseur des services
+Providersite				  Définit l'adresse du site Internet du fournisseur des services
+Phonefacsimile				  Définit le numéro de fax du contat de référence
+Addresselectronicmailaddress  Définit l'adresse de courier électronique du contat de référence
+Adresscity					  Définit la ville du fournisseur des services
+Adressdeliverypoint           Définit l'adresse du fournisseur des services
+============================= ============================================
+
+.. note::
+	Ces paramètres sont utilisés pour définir les métadonnées "opengeospatial web services" (OWS) définies par l'Open Geospatial Consortium  (OGC).
+	
+.. note::
+	Le contact de référence correspond habituellement au nom de la personne responsable du serveur
+	
+Configuration du fournisseur des services
+-----------------------------------------
+
+============================= ============================================
+**Paramètre**                 **Définition**       
+----------------------------- --------------------------------------------
+Keywords         		      Définit les mots clés attribués aux services web, séparés par des virgules  	           
+Title               	      Définit le titre du serveur cartographique	
+Abstract       		          Définit le serveur cartographique par une courte description
+Accesscontraints              Définit si le serveur cartographique nécessite une identification
+Fees						  Définit les conditions d'utilisation et/ou le copyright du serveur
+============================= ============================================
+
+.. note::
+	Ces paramètres sont utilisés pour définir les métadonnées "opengeospatial web services" (OWS) définies par l'Open Geospatial Consortium  (OGC).
+
+.. note::
+	Le fournisseur des services correspond habituellement au nom de l'organisme qui publie les données
+	
+.. warning::
+	Le titre et la description du serveur sont également utilisés dans la page d'accueil de l'interface publique
+	
+
+Configuration de la base de données
+-----------------------------------------
+
+La page de configuration de la base de données n'est disponible que
+lorsque vous utilisez une base de type PostgreSQL pour stocker les
+informations des utilisateurs. Dans le cas où vous n'utiliseriez que
+la base de données SQLite, cette section ne devrait pas apparaitre.
+
+============================= ============================================
+**Paramètre**                 **Définition**       
+----------------------------- --------------------------------------------
+user         		      Définit le nom d'utilisateur à utiliser pour se connecter au serveur de bases de données
+host               	      Définit le nom de machine ou le scoket de domaine unix à utiliser pour se connecter au serveur de bases de données
+port       		          Définit le port à utiliser pour se connecter au serveur de bases de données
+dbname                            Définit le nom de la base de données à utiliser
+schema						  Définit le schema de stockage utilisé pour les table du système
+password						  Définit le mot de passe à utiliser pour se connecter au serveur de bases de données
+============================= ============================================
+	
+
+

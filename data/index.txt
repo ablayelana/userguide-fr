@@ -1,0 +1,32 @@
+.. _data:
+
+Module de gestion des données
+=============================
+
+Cette section regroupe la documentation relative au module de gestion des données de MapMint.
+
+MapMint utilise la librairie d'abstraction des accès aux données
+géographiques `GDAL <http://www.gdal.org>`__, ainsi le système est en
+mesure d'accéder de manière similaire à une base de données, un
+répertoire ou des données diffusées via les services de l'`OGC
+<http://www.opengeospatial.org>`__ (WMS et WFS sont actuellement
+supportés). Ainsi, MapMint définit la notion d'**espaces de stockage**
+et de **source de données**, où un espace de stockage correspond à un
+répertoire, une base de données ou encore un serveur fournissant des
+services web OGC et, une source de données correspond à un fichier
+dans un répertoire, un table géographique de la base de données ou
+encore une couche disponible diffusé via un service web OGC.
+
+.. toctree::
+   :maxdepth: 2
+   
+   datastores
+   datasources
+   processing
+   
+.. |mmdatm| image:: ../_static/images/data-module-preview.png
+   :width: 100%
+   :alt: Dashboard module preview image
+   
+|mmdatm|
+

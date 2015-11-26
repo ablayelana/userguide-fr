@@ -1,0 +1,130 @@
+.. _dashboard-overview:
+
+Section "Vue d'ensemble"
+==========================
+
+Le panneau "Vue d'ensemble" du :doc:`../dashboard/index` fournit une
+vision d'ensemble de l'instance MapMint à un des administrateurs de
+l'application.
+
+La date et l'heure de votre dernière connexion à l'instance est
+premièrement indiquée en haut à gauche.
+
+Différents panneaux présentent des informations spécifiques relatives
+à l'instance de MapMint, ils sont décrits dans les sections suivantes.
+
+.. |mmdhsb| image:: ../_static/images/dashboard-module-preview.png
+   :width: 700
+   :alt: Dashboard module preview image
+   
+|mmdhsb|
+
+Données disponibles
+--------------------------------------------------------
+
+Des informations relatives au :doc:`../data/index` sont disponibles
+dans la panneau bleu présenté ci-dessous, il informe l'administrateur sur:
+
+ * Le nombre d'espaces de stockages créés
+ * Le nombre de répertoires et de bases de données
+ * Le nombre de sources de données disponibles
+
+Une boutton vous permets d'accéder directement au :doc:`../data/index`.
+
+|mmddb|
+
+.. |mmdmb| image:: ../_static/images/dashboard-manager-block.png
+   :width: 400
+   :alt: Visualisation des dernières carte créées
+
+Nombres de cartes disponibles
+--------------------------------------------------------
+
+Le panneau vert présenté ci-dessous, permet d'obtenir un rapide
+apperçu des cartes en cours d'édition. En cliquant sur la stylo de la
+ligne d'une carte, vous pouvez charger cette carte dans le :doc:`../maps/index` 
+
+|mmdmb|
+
+Versions des logiciels installés
+--------------------------------------------------------
+
+Le panneau orange présenté ci-dessous, fournis les informations
+relatives aux versions des logiciels installés et utilisés par
+l'application MapMint.
+
+.. |mmdvb| image:: ../_static/images/dashboard-version-block.png
+   :width: 400
+   :alt: Visualisation des versions des logiciels installés
+   
+|mmdvb|
+
+Cela permet lors de rapport de problème de spécifier les versions utilisées.
+
+
+.. |mmddb| image:: ../_static/images/dashboard-datastore-block.png
+   :width: 400
+   :alt: Visualisation des données disponibles
+   
+ 
+Le nombre de cartes crées dans le :doc:`../maps/index` ainsi que le nombres de projets publiés dans le :doc:`../apps/index` sont par ailleur indiqués en dessous.
+
+
+
+Statistiques du serveur
+L'adresse IP du serveur est : 161.3.155.73
+Version de MapServer : 6.2.0
+Version de GDAL : 1.10.0
+Disk usage
+
+Gestion des symboles
+--------------------------------------------------------
+
+Le panneau gris présenté ci-dessous liste :
+
+ * les symboles que vous pourrez utiliser pour définir le style de vos couches depuis le :doc:`../data/index`, 
+ * les polices disponible dans une liste déroulante,
+ * la liste des symboles d'une police sélectionnée.
+
+Il permet la gestion des symboles utilisés pour définir le style de
+vos couches. La mode opératoire de ce panneau est très simple.
+Si vous selectionnez une police présente dans la liste déroulante au
+milieu du panneau, l'ensemble des symboles qu'elle contient sera alors
+affiché en desous. Vous avez la possibilité de sélectionner un ou plusieur
+symboles dans la liste des symboles présents dans une police et de les
+ajouter à la liste des symboles disponibles en cliquant sur le boutton
+"+". De la même manière, vous avez la possibilité de sélectionner des
+symboles affichés au dessus de la liste déroulante et de cliquer sur
+le bouton "-" afin de les supprimer effectivement.
+
+|mmdsb|
+
+
+Gestion des Systèmes de Références Spatiales (SRS)
+--------------------------------------------------------
+
+Le panneau rouge vous présente la liste des Systèmes de Références
+Spatiales (SRS). Si vous saisissez un code EPSG ou IGNF dans le champ
+affiché en bas du panneau, vous pourrez alors l'ajouter à la liste des
+SRS favoris. En cliquant sur le bouton "poubelle" vous pouvez
+supprimer le SRS correspondant de la liste des favoris. Cela est
+utilsé afin de limiter le nombre de SRS affichés dans les divers
+formulaires de l'application.
+
+
+.. |mmdsrb| image:: ../_static/images/dashboard-srs-block.png
+   :width: 50%
+   :alt: Visualisation du panneau de gestion des symboles
+
+   
+|mmdsrb|
+
+.. |mmdsb| image:: ../_static/images/dashboard-symbols-block.png
+   :width: 400
+   :alt: Visualisation du panneau de gestion des symboles
+   
+.. |mmdmb| image:: ../_static/images/dashboard-manager-block.png
+   :width: 400
+   :alt: Visualisation des dernières carte créées
+   
+

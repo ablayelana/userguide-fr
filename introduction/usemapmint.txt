@@ -1,0 +1,129 @@
+.. _introduction-usemapmint:
+
+Utiliser MapMint
+================
+
+.. contents:: Table des matières
+    :depth: 4
+    :backlinks: top
+    
+L'application MapMint est constituée d'une **interface
+d'administration** comportant différents modules et d'une **interface
+publique**. 
+
+Accès aux modules d'administration
+-------------------------------------
+
+En fonction des paramètres du :doc:`../dashboard/configuration` et de
+votre installation de MapMint, les modules listés ci-dessous sont
+disponibles dans l'interface d'administration.
+ 
+============================== ============================================
+**Module**                     **URL d'accès**       
+------------------------------ --------------------------------------------
+Tableau de bord                http://votre-instance.com/Dashboard_bs
+Gestion des données            http://votre-instance.com/Distiller_bs
+Création de territoires        http://votre-instance.com/Territories_bs
+Création d'indicateurs         http://votre-instance.com/Indexes_bs
+Création de thèmes             http://votre-instance.com/Themes_bs
+Import de document             http://votre-instance.com/Documents_bs
+Création de cartes             http://votre-instance.com/Manager_bs
+Publication d'applications     http://votre-instance.com/Publisher_bs
+============================== ============================================
+
+Formulaire d'identification
+---------------------------------
+
+Pour accèder aux modules de l'interface d'administration, entrez le **nom d'utilisateur** et le **mot de passe** qui vous ont été communiqués par email dans le formulaire de connexion illustré ci-après, et cliquez sur le bouton "Identification".
+
+.. note::
+	Vous pouvez également presser le bouton "Entrer" de votre clavier au lieu de cliquer sur le bouton "Identifier"
+	
+.. |login| image:: ../_static/images/login-screen.png
+   :width: 700
+   :alt: MapMint login screen
+   
+|login|
+
+Un message de succès s'affiche dans un cadre vert en haut à droite de votre écran et le module se charge. Si vous obtenez un bandeau rouge en haut de l'écran, veuillez vérifier vos paramètres de connexion et recommencer.
+
+Accès à l'interface publique
+-------------------------------------
+
+L'interface publique de MapMint est accessible via l'URL
+http://votre-instance.com/public/ qui constitue la page d'accueil de
+l'application. Les cartes publiéees sont accessibles depuis la
+cartothèque (deuxième onglet du menu). On peut accèder directement à
+une carte spécifique en utilisant sont URL spécifique ( du type
+http://votre-instance.com/public/le-nom-de-votre-carte).
+
+============================== ============================================
+**Module**                     **URL d'accès**       
+------------------------------ --------------------------------------------
+Interface publique             http://votre-instance.com/public/
+Interface publique indicateurs http://votre-instance.com/public/indicateurs
+Carte publiée                  http://votre-instance.com/public/le-nom-de-votre-carte
+============================== ============================================
+
+Premiers paramétrages
+----------------------
+
+Lors d'une première connexion, les étapes suivantes sont recommandées pour le assurer le bon fonctionnement de l'interface publique.
+
+Titre de l'interface publique
+.................................
+
+Le titre de l'interface publique apparait dans le bandeau du haut de la page d'accueil. Pour le configurer, rendez vous dans le :doc:`../dashboard/configuration` puis modifiez la valeur **Title** dans l'onglet *Configuration du fournisseur*. Cliquez sur le bouton "Enregister" du panneau de configuration et recharger votre page d'accueil pour que les modifications soient effectives.
+
+.. note::
+	Le titre est également utilisé dans la balise <title> du code source de la page
+	 
+Carte de l'interface publique
+.................................
+
+La carte de l'interface publique apparait dans le corps de la page d'accueil. Pour la créer et la configurer, rendez vous dans le :doc:`../maps/index` puis créer un projet nommé **Default**. Une fois enregistrée, veuillez recharger cette la page d'accueil pour voir la carte s'afficher.
+
+.. note::
+	La carte d'accueil peut être utilisée pour cartographier un projet en particulier que l'utilisateur souhaiterait voir affichée sur la page d'accueil. Elle peut aussi servir d'entrée cartographique vers les différents projets publiés. Celà nécessite l'utilisation d'une source de données répertoriant les URL des projets.
+
+
+Ajouter des données
+---------------------------------
+
+Deux solutions sont proposées pour charger des données SIG sur le serveur d'installation de votre instance MapMint.
+
+Si vous souhaitez ajouter des données vectorielles légères (**< 2Mo**), rendez vous dans le :doc:`../data/index` et utiliser l'utilitaire de chargement de données (upload), dont le fonctionnement est décrit dans la section relative aux :doc:`../data/index`.
+
+Si vous désirez charger des données vecteur ou raster plus volumineuses, il vous faudra utiliser l'accès FTP qui vous a été fourni avec les informations de connexion à votre instance MapMint. Pour ce faire, veuillez installer et lancer un client FTP depuis votre ordinateur (comme `FileZilla <https://filezilla-project.org/>`__ par exemple) et renseigner les informations suivantes dans le formulaire prévu à cet effet (en haut de la fenêtre du logiciel dans le cas de FileZilla), puis cliquer sur le bouton "Connexion".
+
+============================== ============================================
+**Paramètre**                  **Définition**       
+------------------------------ --------------------------------------------
+Hôte                           URL ou adresse IP du serveur sur lequel votre instance est installée
+Nom d'utilisateur              Nom d'utilisateur fourni par email
+Mot de passe                   Mot de passe fourni par email
+============================== ============================================
+
+.. |upftp| image:: ../_static/images/upload-ftp.png
+   :height: 505
+   :width: 800
+   :alt: FTP client exemple screenshot
+   
+|upftp|
+
+Une fois connecté au serveur, le répertoire général de stockage des sources de données (il s'agit générallement du répertoire /var/www/data/ftp) est listé et affiché dans la fenêtre de droite du client FTP. Vous pouvez alors créer un nouveau répertoire ou bien utiliser un répertoire existant.
+
+* Dans le cas ou vous souhaiteriez ajouter des données à un répertoire existant, veuillez procéder à un glissé-déposé de vos données de la partie gauche de la fenêtre (où l'arborescence de votre ordinateur est listée) à la partie droite, en direction du répeetoire visé. Cela entraîne le chargement des données dans le répertoire concerné sur le serveur. La progression du chargement des fichiers est indiquée par des barres de progression en bas de la fenêtre. La durée du transfert varie en fonction du poids des données à charger.
+
+* Dans le cas ou vous souhaiteriez créer un nouveau répertoire, procédez à un clic droit dans la partie de droite et cliquez sur le sous menu "Créer un nouveau dossier" du menu contextuel qui apparait. Entrez ensuite un nom pour le nouveau répertoire dans la fenêtre prévue à cet effet, puis cliquer sur le bouton "OK". Cela entraîne la fermeture de la fenêtre et l'ajou du nouveau répertoire à la liste. Vous pouvez ensuite procéder à un glissé-déposé des vos données, comme décrit dans le paragraphe précédent.
+
+.. warning::
+
+	Le nom d'un nouveau répertoire de données ne doit pas contenir d'accent ou de caractères spéciaux !
+	
+.. 
+
+ 
+
+
+
